@@ -36,7 +36,7 @@ jobs:
 
     env:
       DIGIPAY_BASE_URL: ${{ github.event.inputs.target_url || 'https://harishbalaji826-ops.github.io/digipay-Web/' }}
-      DIGIPAY_BACKEND_URL: ${{ secrets.DIGIPAY_BACKEND_URL || 'https://digipay-backend.up.railway.app' }}
+      DIGIPAY_BACKEND_URL: ${{ secrets.DIGIPAY_BACKEND_URL || 'https://web-production-86613.up.railway.app' }}
       ADMIN_PHONE: "9999999999"
       SELENIUM_TIMEOUT: "20"
 

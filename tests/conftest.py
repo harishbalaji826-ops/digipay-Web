@@ -22,8 +22,9 @@ BASE_URL = os.environ.get(
 )
 BACKEND_URL = os.environ.get(
     "DIGIPAY_BACKEND_URL",
-    "https://digipay-backend.railway.app"
+    "https://web-production-86613.up.railway.app"
 )
+
 ADMIN_PHONE = os.environ.get("ADMIN_PHONE", "9999999999")
 DEFAULT_TIMEOUT = int(os.environ.get("SELENIUM_TIMEOUT", "20"))
 
