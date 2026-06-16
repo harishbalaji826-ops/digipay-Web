@@ -1,0 +1,3 @@
+# Reports directory — local XLSX reports are git-ignored
+# GitHub Actions uploads them as downloadable artifacts instead
+*.xlsx

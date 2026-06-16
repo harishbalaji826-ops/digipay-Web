@@ -25,3 +25,19 @@ dist-ssr
 
 .env
 
+# ── Python / Pytest / Selenium test artefacts ────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.test-results/
+*.egg-info/
+.eggs/
+
+# Local XLSX reports (CI/CD uploads these as GitHub Actions artifacts)
+reports/*.xlsx
+
+# Virtual environments
+venv/
+.venv/
+env/

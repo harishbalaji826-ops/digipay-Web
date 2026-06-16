@@ -1,0 +1,21 @@
+# ─── Digipay E2E Test Suite — Python dependencies ────────────────────────────
+# Install with: pip install -r requirements-test.txt
+
+# Selenium WebDriver
+selenium>=4.20.0
+
+# ChromeDriver auto-installer
+webdriver-manager>=4.0.1
+
+# Pytest core
+pytest>=8.2.0
+pytest-timeout>=2.3.1
+
+# JSON report plugin (generates .test-results/report.json)
+pytest-json-report>=1.5.0
+
+# XLSX report generation
+openpyxl>=3.1.2
+
+# HTTP requests (for API-level tests)
+requests>=2.31.0
