@@ -8,9 +8,11 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+# dist is now output as docs/ for GitHub Pages branch deployment
 dist
 dist-ssr
 *.local
+# docs/ is intentionally NOT ignored — it's the built output committed for GitHub Pages
 
 # Editor directories and files
 .vscode/*
@@ -34,7 +36,7 @@ __pycache__/
 *.egg-info/
 .eggs/
 
-# Local XLSX reports (CI/CD uploads these as GitHub Actions artifacts)
+# Local XLSX reports (uploaded as GitHub Actions artifacts, not needed in git)
 reports/*.xlsx
 
 # Virtual environments

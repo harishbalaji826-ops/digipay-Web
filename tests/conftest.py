@@ -19,7 +19,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 # ─────────────────────────────────────────────────────────────────────────────
 BASE_URL = os.environ.get(
     "DIGIPAY_BASE_URL",
-    "https://harishbalaji826-ops.github.io/Digipay-Web/"
+    "https://harishbalaji826-ops.github.io/digipay-Web/"
 )
 BACKEND_URL = os.environ.get(
     "DIGIPAY_BACKEND_URL",
