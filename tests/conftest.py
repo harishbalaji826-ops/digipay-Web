@@ -8,11 +8,10 @@ import time
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Configuration – override with environment variables in GitHub Actions
@@ -50,11 +49,11 @@ def build_driver() -> webdriver.Chrome:
         "profile.default_content_setting_values.notifications": 2
     })
 
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=opts)
+    driver = webdriver.Chrome(options=opts)
     driver.set_page_load_timeout(30)
     driver.implicitly_wait(5)
     return driver
+
 
 
 # ─────────────────────────────────────────────────────────────────────────────
